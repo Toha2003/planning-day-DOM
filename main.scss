@@ -103,8 +103,9 @@ body {
   }
 
   .box__content {
+    height: 60%;
     .list {
-      height: 160px;
+      height: 100%;
       overflow-y: auto;
       scrollbar-width: none;
       .item {

@@ -114,8 +114,11 @@ body {
   color: rgba(255, 0, 0, 0.838);
   font-weight: 550;
 }
+.container .box__content {
+  height: 60%;
+}
 .container .box__content .list {
-  height: 160px;
+  height: 100%;
   overflow-y: auto;
   scrollbar-width: none;
 }
