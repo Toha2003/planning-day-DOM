@@ -15,47 +15,82 @@ body {
 }
 
 .container {
-    width:400px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background-color: rgba(4, 0, 255, 0.456);
   align-items: center;
-  padding: 50px;
+  padding: 50px 30px;
   border: 1px solid rgba(0, 0, 0, 0.838);
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(4, 0, 255, 0.456);
+  @media (max-width: 500px) {
+    width: 90%;
+    height: 80%;
+    padding: 20px;
+  }
   h1 {
+    height: 50px;
+    text-align: center;
     font-size: 25px;
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
   }
   .box {
     padding: 20px 0;
     .box__top {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 10px;
       padding-bottom: 10px;
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
       input {
-        width: 70%;
+        width: 60%;
         height: 25px;
         border: none;
         border-radius: 5px;
         &:focus {
           outline: 1px solid rgba(0, 0, 0, 0.838);
         }
+         @media (max-width: 500px) {
+            width: 100%;
+            height: 30px;
+         }
       }
-      button {
-        font-size: 16px;
-        width: 30%;
-        border: none;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.838);
-        color: #fff;
-        cursor: pointer;
-        &:hover {
-          box-shadow: 0 0 10px white;
-          transition: 0.3s ease-in-out;
+      div {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        @media(max-width:500px){
+        width: 100%;
         }
-        &:active {
-          box-shadow: 0 0 20px white;
+        button {
+          font-size: 16px;
+          width: 50%;
+            height: 26px;
+          border: none;
+          border-radius: 5px;
+          background-color: rgba(0, 0, 0, 0.838);
+          color: #fff;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 0 0 10px white;
+            transition: 0.3s ease-in-out;
+          }
+          &:active {
+            box-shadow: 0 0 20px white;
+          }
+          @media(max-width:500px){
+            width: 45%;
+            height: 30px;
+            font-size: 14px;
+          }
         }
       }
     }

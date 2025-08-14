@@ -159,7 +159,7 @@ addBtn.addEventListener("click", () => {
     sonar.style.display = "block";
   }
 
-  location.reload();
+  // location.reload();
 
 });
 
