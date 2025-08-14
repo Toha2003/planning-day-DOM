@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 45%;
+  width: 400px;
   height: 350px;
   background-color: rgba(4, 0, 255, 0.456);
   align-items: center;
